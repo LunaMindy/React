@@ -1,14 +1,14 @@
-function ComA(props) {
+function Exam01WrapElement(props) {
     return(
         <div className="card">
         <div className="card-header">
-        ComA
+        Exam01WrapElement
         </div>
         <div className="card-body">
-            content...
+                content...
         </div>
       </div>
     );
 }
 
-export default ComA;
+export default Exam01WrapElement;

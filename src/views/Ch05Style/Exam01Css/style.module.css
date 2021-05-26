@@ -1,0 +1,14 @@
+.wrapper {
+    background-color: black;
+    padding: 0.5rem;
+    color:white;
+    font-size: 1.2rem;
+    /* 보통글씨보다 1.2배크다 */
+}
+
+/* inverted->반대개념 */
+.inverted{
+    background-color: white;
+    color:black;
+    border:1px solid black;
+}
