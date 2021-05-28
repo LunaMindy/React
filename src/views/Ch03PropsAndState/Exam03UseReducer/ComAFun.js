@@ -1,5 +1,8 @@
 import { useReducer } from "react";
 
+
+
+  //어떤게 상태를 변경할건지 내용을 갖고있는 함수, 뭘 변경하고 싶어~ 하는 통보내용을 action으로 받아서
 //방법1 
 //상태를 정의할때 이미 만들어야 한다.
 //상태를 변경하느 함수
@@ -31,6 +34,7 @@ function ComAFun(props) {
      * const[state, dispatch] = useReducer(reducer,초기값);
      */
     const[state, dispatch] = useReducer(reducer, {number:0}); //처음 state에는 {number:0} 얘가 저장되어 있다.
+
 
     //이벤트 처리 함수
     const incrementCounter = (event) => {

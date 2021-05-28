@@ -9,7 +9,7 @@ function getBoards() {
   return boards;
 }
 
-function BoardList(props) {
+function BoardList(props) { //1)렌더링 될때마다 계속 선언
   const [btitle, setBtitle] = useState("");
   const [boards, setBoards] = useState(getBoards);
   const [bno, setBno] = useState(6);

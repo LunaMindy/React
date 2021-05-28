@@ -5,13 +5,32 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter } from "react-router-dom";
+import { AppContextProvider } from 'AppContext';
+import { createStore } from 'redux';
+import rootReducer from "redux/root-reducer";
+import { Provider } from 'react-redux';
+import { composeWithDevTools } from "redux-devtools-extension"
+//Provider-> 컨텍스트로 만들어짐, 원래 리엑트에서 리덕쓰 못쓰는데 쓸수있게 하는게 리액트-리덕스
+
+const store = createStore(rootReducer, composeWithDevTools());
+// store.state.colorReducer
+// store.dispatch()
+
+//스토어 => 저장하는 객체 무엇을~? -> rootreducer.rootreducer안에 리듀서들 들어가있어, 
+//그 리듀서들안에 있는 객체들의 상태를 저장! 전역데이터 저장! color 같은 전역데이터 총관리
+//그 루트리듀서에 컨바인되어있는 디듀스들의 상태데이터, 데이터베이스 같은 느낌
+
 
 ReactDOM.render(
 
     <BrowserRouter>
-      <App />
+    <Provider store={store}>
+      <AppContextProvider>
+        <App />
+      </AppContextProvider>
+    </Provider>
     </BrowserRouter>,
-  document.getElementById('root')
+  document.getElementById("root"),
 );
 //app의 내용을 id 가 root인 element에 넣는다.
 // If you want to start measuring performance in your app, pass a function
