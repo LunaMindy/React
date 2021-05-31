@@ -81,7 +81,9 @@ function AppMenu() {
         <li className="nav-item mt-3">
           <h6 className="text-white">Ch09. Ajax</h6>
           <Link to="/ch09/exam01" className="nav-link text-warning">Exam01AsyncControl</Link>
-         
+          <Link to="/ch09/exam02" className="nav-link text-warning">Exam02Auth</Link>
+          <Link to="/ch09/exam03" className="nav-link text-warning">Exam03Boards</Link>
+          <Link to="/ch09/exam04" className="nav-link text-warning">Exam04FileUploadDownload</Link>
 
         </li>
       </ul>

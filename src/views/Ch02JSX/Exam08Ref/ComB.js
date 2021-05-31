@@ -20,7 +20,7 @@ class ComB extends React.Component {
     return (
       <div className="card">
         <div className="card-header">
-         ComAClassTypeEventHandling
+        ComB
         </div>
         <div className="card-body">
           <div className="form-row align-items-center">

@@ -12,35 +12,35 @@ class ComAClassTypeEventHandling extends React.Component {
     }
 
     method1(){
-        // console.log("method1() 실행");
+        console.log("method1() 실행");
 
     }
     //방법1
     handleBtn1(event){
-        // console.log("버튼1이 클릭되었습니다.");
-        // console.log(event.target.name);
-        // console.log(event.type);
-        this.method1();
+        console.log("버튼1이 클릭되었습니다.");
+        console.log(event.target.name); //btn1
+        console.log(event.type);//click
+        this.method1(); //method1() 실행
     }
     handleBtn2(event, x, y){
         const result = x+y;
-        // console.log("계산 결과 : "+result);
-        // console.log(event.target.name);
-        // console.log(event.type);
-        this.method1();
+        console.log("계산 결과 : "+result); //계산 결과 : 8
+        console.log(event.target.name); //btn2
+        console.log(event.type); //click
+        this.method1(); //method1() 실행
     }
     //방법2
     handleBtn3(event){
-        // console.log("버튼3이 클릭되었습니다.");
-        // console.log(event.target.name);
-        // console.log(event.type);
-        this.method1();
+        console.log("버튼3이 클릭되었습니다.");
+        console.log(event.target.name); //btn3
+        console.log(event.type); //click
+        this.method1(); //method1() 실행
     }
     handleBtn4(event){
-        // console.log("버튼4이 클릭되었습니다.");
-        // console.log(event.target.name);
-        // console.log(event.type);
-        this.method1();
+        console.log("버튼4이 클릭되었습니다.");
+        console.log(event.target.name); //btn4
+        console.log(event.type); //click
+        this.method1(); //method1() 실행
     }
     render() {
         return (

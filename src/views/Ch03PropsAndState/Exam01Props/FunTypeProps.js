@@ -1,8 +1,8 @@
 import PropTypes from "prop-types";
 
 function FunTypeProps(props) {
-    // console.log("함수",props);
-    // console.log("함수",props.match);
+    console.log("함수",props);
+    console.log("함수",props.match);
 
     return(
         <div className="card">

@@ -5,7 +5,7 @@ function ComCTwoWayBinding(props) {
   const [content, setContent] = useState("");//상태를 만드는것
 
   const handleChange = (event) => {
-    // console.log("aaaaaaaaaaaaaa",event.target.value);
+    console.log("입력:",event.target.value);
     setContent(event.target.value);
   }
 

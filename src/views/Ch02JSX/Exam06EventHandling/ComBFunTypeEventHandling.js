@@ -1,15 +1,16 @@
 function ComBFunTypeEventHandling(props) {
     
     const handleBtn1 = (event) => {
-        // console.log("버튼1이 클릭되었습니다.");
-        // console.log(event.target.name);
-        // console.log(event.type);
+        console.log("버튼1이 클릭되었습니다.");
+        console.log(event.target.name); //btn1
+        console.log(event.type); //click
     };
     const handleBtn2 = (event,x,y) => {
         const result = x+y;
-        // console.log("계산 결과 : "+result);
-        // console.log(event.target.name);
-        // console.log(event.type)
+        console.log("계산 결과 : "+result); //계산 결과 : 8
+        console.log(event.target.name); //btn2
+        console.log(event.type); //click
+
     };
 
     return(

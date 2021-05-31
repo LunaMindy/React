@@ -1,13 +1,9 @@
+import ComAClass from "./ComAClass";
+import ComAFun from "./ComAFun";
+import ComBClass from "./ComBClass";
 import ComBFun from "./ComBFun";
+import ComCFun from "./ComCFun";
 import ComCFunWithImmer from "./ComCFunWithImmer";
-
-
-
-const { default: ComAClass } = require("./ComAClass");
-const { default: ComAFun } = require("./ComAFun");
-const { default: ComBClass } = require("./ComBClass");
-const { default: ComCFun } = require("./ComCFun");
-
 
 function Exam02State(props) {
     return(
@@ -16,11 +12,11 @@ function Exam02State(props) {
         Exam02State
         </div>
         <div className="card-body">
-           <ComAClass/>
-           <ComAFun/>
-           <ComBClass/>
+            <ComAClass/>
+            <ComAFun/>
+            <ComBClass/>
            <ComBFun/>
-           <ComCFun/>
+           <ComCFun/> 
            <ComCFunWithImmer/>
         </div>
       </div>
